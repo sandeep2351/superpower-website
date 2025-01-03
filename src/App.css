@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+h2,
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.main-box {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.left-section {
+  width: 100%;
+  max-width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.left-section ul li {
+  margin: 10px 0;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.left-section ul li:hover {
+  color: #0056b3;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.all-time,
+.daily,
+.monthly {
+  width: 100%;
+  max-width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.all-time:hover,
+.daily:hover,
+.monthly:hover {
+  cursor: pointer;
+  top: 0.5%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.canvas {
+  width: 100%;
+  height: 500px;
+}
+
+.bcs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 45px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.pie-chart-column {
+  width: 30%;
+  height: 30%;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .main-box {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left-section {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 20px;
+  }
+
+  .right-section {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .left-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .all-time,
+  .daily,
+  .monthly {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .canvas {
+    width: 430px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-box {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .left-section {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 10px;
+  }
+
+  .right-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .left-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .all-time,
+  .daily,
+  .monthly {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  .canvas {
+    width: 350px !important;
+  }
+
+  .pie-chart-column {
+    width: 80% !important;
+    height: 40%;
+  }
+
+  .dashboard-container {
+    gap: 20px;
+  }
+}
